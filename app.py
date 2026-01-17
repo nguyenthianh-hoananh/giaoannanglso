@@ -193,7 +193,7 @@ st.markdown("""
     <h1>📘 TRỢ LÝ SOẠN GIÁO ÁN TỰ ĐỘNG (NLS)</h1>
     <p>Tác giả: Nguyễn Thị Anh - Trường PTDTBT TH_THCS Hương Sơn</p>
 </div>
-""")
+""", unsafe_allow_html=True)
 
 if "GEMINI_API_KEY" in st.secrets:
     api_key = st.secrets["GEMINI_API_KEY"]
@@ -347,4 +347,4 @@ if st.button("🚀 SOẠN GIÁO ÁN NGAY"):
 
 # --- CHÂN TRANG ---
 st.markdown("---")
-st.markdown("<div style='text-align: center; color: #666;'>© 2026 - Nguyễn Thị Anh - Trường PTDTBT TH_THCS Hương Sơn</div>")
+st.markdown("<div style='text-align: center; color: #666;'>© 2026 - Nguyễn Thị Anh - Trường PTDTBT TH_THCS Hương Sơn</div>", unsafe_allow_html=True)
